@@ -1,0 +1,10 @@
+library("devtools")
+library("roxygen2")
+setwd("C:/Users/Mary/Desktop/Test")
+
+build("TestPackage")
+install("TestPackage")
+library("TestPackage")
+
+setwd("C:/Users/Mary/Desktop/Test/TestPackage")
+document()
